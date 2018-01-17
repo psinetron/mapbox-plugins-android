@@ -506,7 +506,7 @@ public final class LocationLayerPlugin implements LocationEngineListener, Compas
    */
   private void setLocation(final Location location) {
     lastLocation = location;
-
+    this.location = location;
     // Convert the new location to a Point object.
     Point newPoint = Point.fromCoordinates(new double[] {location.getLongitude(),
       location.getLatitude()});
